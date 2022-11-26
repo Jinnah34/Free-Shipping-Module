@@ -38,30 +38,8 @@ define([
 
             let amount = self._config.min_price - subtotalAmount;
 
-            // let priceFormat = {
-            //     decimalSymbol: '.',
-            //     groupLength: 3,
-            //     groupSymbol: ",",
-            //     integerRequired: false,
-            //     pattern: "$%s",
-            //     precision: 2,
-            //     requiredPrecision: 2
-            // };
-
-            // let temp = priceUtils.formatPrice(amount);
 
             let temp = currency_symbol.concat(amount);
-
-
-            // let temp = priceUtils.formatPriceLocale(amount);
-
-            console.log(subtotalAmount);
-            console.log(amount);
-            console.log(self._config.min_price);
-
-            console.log(typeof subtotalAmount);
-            console.log(typeof amount);
-            console.log(typeof self._config.min_price);
 
             return ko.computed(function() {
 
